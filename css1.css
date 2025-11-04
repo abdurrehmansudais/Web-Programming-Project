@@ -1,0 +1,275 @@
+/* ===== Global ===== */
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #fbf8f4 0%, #faebd7 100%); /* soft warm background */
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* center helpers */
+.center { text-align: center; }
+
+/* ===== Header ===== */
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #162238 0%, #23406b 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(15, 30, 60, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Logo */
+.Logo img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.02);
+  padding: 4px;
+}
+
+/* Site title */
+.Header h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Navbar */
+.Navbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Navbar links (subtle pill) */
+.Navbar .btn {
+  display: inline-block;
+  color: rgba(255,255,255,0.95);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  background: transparent;
+  border: 1px solid transparent;
+  backdrop-filter: blur(2px);
+}
+.Navbar .btn:hover {
+  background: rgba(255,255,255,0.96);
+  color: #1e3c72;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30,60,114,0.12);
+}
+
+/* ===== Main & Banner ===== */
+.main {
+  flex: 1;
+  width: 100%;
+  padding: 28px 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Banner card */
+.Banner {
+  position: relative;
+  margin: 8px 0 30px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(30, 48, 84, 0.08);
+}
+
+/* responsive banner image */
+.Banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: cover;
+}
+
+/* primary CTA button (styles from your inline button, moved here) */
+.cta {
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 14px 48px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9966 0%, #ff5e62 50%, #7f53ac 100%); /* sunset */
+  box-shadow:
+    0 8px 30px rgba(127, 83, 172, 0.18),
+    0 10px 40px rgba(255, 100, 50, 0.12),
+    inset 0 -3px 10px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+  -webkit-text-stroke: 0px transparent; /* avoid odd outlines from browser */
+}
+
+/* CTA hover */
+.cta:hover {
+  transform: translate(-50%, -50%) scale(1.03);
+  filter: saturate(1.05) brightness(1.03);
+  box-shadow:
+    0 14px 40px rgba(127, 83, 172, 0.22),
+    0 18px 60px rgba(255, 100, 50, 0.14);
+}
+
+/* ===== Services Table (modern, warm to fit page) ===== */
+.Services {
+  margin: 30px 0;
+}
+
+.services-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff8f0;
+  box-shadow: 0 10px 30px rgba(30,48,84,0.06);
+}
+
+.services-table th {
+  padding: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #8b5e34, #a47148, #cbb994);
+  text-align: center;
+}
+
+.services-table td {
+  padding: 18px;
+  color: #444;
+  border-bottom: 1px solid #e5d6c6;
+  text-align: left;
+}
+
+.services-table tr:nth-child(even) {
+  background: #fdf3e6;
+}
+
+.services-table tr:hover td {
+  background: #ffe8cc;
+  transform: scale(1.01);
+}
+
+/* Make table cells readable on small screens */
+@media (max-width: 720px) {
+  .services-table th, .services-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .Banner img { max-height: 420px; }
+  .cta {
+    top: 80%;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+/* ===== About Section ===== */
+.About {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.About h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #1e3c72;
+  letter-spacing: 0.6px;
+}
+
+.About p {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ===== Contact Card (if present) ===== */
+.contact-info {
+  display: inline-block;
+  text-align: left;
+  background: #fff8f0;
+  padding: 18px 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(30,48,84,0.06);
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info img { vertical-align: middle; margin-right: 10px; }
+
+/* button-like address/map link */
+.contact-map-btn {
+  display: inline-block;
+  font-style: italic;
+  background: linear-gradient(145deg, #1e3c72, #2a5298);
+  color: white;
+  -webkit-text-stroke: 1px orange;
+  border: 2px solid #87CEEB;
+  font-weight: bold;
+  padding: 11px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 14px 24px;
+  text-align: center;
+  background: rgba(30,48,84,0.04); /* subtle warm tinted footer */
+  color: #333;
+  font-size: 15px;
+  border-top: 1px solid rgba(30,48,84,0.05);
+}
+
+/* footer links */
+.footer a {
+  color: #1e3c72;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+}
+.footer a:hover { color: #ff5e62; }
+
+/* small screens: header & layout tweaks */
+@media (max-width: 880px) {
+  .Header { padding: 12px 18px; }
+  .Header h1 { font-size: 20px; }
+  .Navbar { gap: 8px; }
+  .Logo img { width: 64px; height: 64px; }
+  .main { padding: 18px; }
+}

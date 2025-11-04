@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafarNama | Contact Us</title>
+  <link rel="stylesheet" href="Style1.css">
 </head>
 <body>
-    <div class="Header" style="display: flex;justify-content: space-between;">
-        <div class="Logo">
-            <img src="Images/SafarNama Logo.png" alt="Logo" width="120" height="120" >
-        </div>
-        <h1><strong>SafarNama</strong></h1>
-        <div class="Navbar" style="justify-content: flex-end;gap: 10px;padding: 40px 20px;">
-            <a href="Home.html">Home</a>
-            <a href="Services.html">Services</a>    
-            <a href="Partners.html">Our Partners</a>
-            <a href="Contact.html">Contact Us</a>
-            <a href="About.html">About Us</a>
-        </div>
+  <header>
+    <div class="logo">
+      <img src="Images/SafarNama Logo.png" alt="SafarNama Logo">
+      <h1>SafarNama</h1>
     </div>
-    <div class="footer"  >
-         <a href="About.html" >About</a> |
-        <a href="Services.html" >Services</a> |
-        <a href="Contact.html" >Contact</a>
-    </div>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="Partners.html">Partners</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <main class="main" style="text-align: center; padding: 60px 20px;">
+    <section class="contact">
+      <h2 style="font-size: 2.2rem; margin-bottom: 15px;">Contact Us</h2>
+      <p style="max-width: 600px; margin: 0 auto 40px; color: #555; line-height: 1.6;">
+        We’d love to hear from you! Whether you have questions, feedback, or collaboration ideas — 
+        reach out using any of the methods below.
+      </p>
+
+      <ul style="
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        transform: translateX(-25px);
+      ">
+        <li style="
+          display: flex; 
+          align-items: center; 
+          gap: 12px; 
+          width: 260px; 
+          justify-content: flex-start;
+        ">
+          <img src="Images/phone icon.png" alt="Phone" width="24" height="24">
+          <a href="tel:+123456789" style="text-decoration: none; color: #333; font-size: 1.1rem;">
+            +123 456 789
+          </a>
+        </li>
+
+        <li style="
+          display: flex; 
+          align-items: center; 
+          gap: 12px; 
+          width: 260px; 
+          justify-content: flex-start;
+        ">
+          <img src="Images/Mail icon.png" alt="Email" width="24" height="24">
+          <a href="mailto:abdurrehmansudais4398@gmail.com" style="text-decoration: none; color: #333; font-size: 1.1rem;">
+            abdurrehmansudais4398@gmail.com
+          </a>
+        </li>
+
+        <li style="
+          display: flex; 
+          align-items: center; 
+          gap: 12px; 
+          width: 260px; 
+          justify-content: flex-start;
+        ">
+          <img src="Images/location.png" alt="Location" width="24" height="24">
+          <a href="https://www.google.com/maps/place/DPL/@33.6680556,73.0754629,17z"
+             target="_blank"
+             style="text-decoration: none; color: #333; font-size: 1.1rem;">
+            I-8, Islamabad
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a href="About.html">About</a> |
+    <a href="Services.html">Services</a> |
+    <a href="Contact.html">Contact</a>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,177 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    background-color: white;
+}
+.main{
+    flex:1;
+    
+}
+.Header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;             
+  padding: 10px 30px;
+  background: #f8f8f8;
+  border-bottom: 2px solid #ddd;
+}
+.Header a.btn {
+  background: linear-gradient(135deg, #ff9966, #ff5e62, #7f53ac); /* sunset orange → red → purple */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 30px; /* futuristic pill shape */
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(255, 100, 50, 0.6), 
+              0 0 20px rgba(127, 83, 172, 0.4); /* glowing effect */
+}
+
+.Header a.btn:hover {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b, #7f53ac); /* brighter glow on hover */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 150, 100, 0.8),
+              0 0 30px rgba(127, 83, 172, 0.7);
+}
+
+.Header a.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 8px rgba(255, 100, 50, 0.5);
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;      /* improves readability */
+  color: #333;           /* dark gray, easier on eyes than pure black */
+  margin: 0 0 1.2em;     /* space below paragraphs */
+  text-align: justify;   /* neat alignment on both sides */
+  padding: 0 10px;       /* little horizontal breathing room */
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;       /* big, but scales nicely */
+  font-weight: 700;        /* bold for emphasis */
+  color: #222;             /* dark, clean text */
+  text-align: center;      /* center aligned */
+  margin: 20px 0;          /* spacing above and below */
+  letter-spacing: 1px;     /* slight spacing between letters */
+  text-transform: uppercase; /* makes it stand out */
+}
+button, .btn {
+  background: #0066cc;       /* primary color */
+  color: #fff;               /* white text */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;        /* smooth corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth hover */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover, .btn:hover {
+  background: #004d99;       /* darker blue on hover */
+  transform: translateY(-2px); /* subtle lift */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button:active, .btn:active {
+  transform: translateY(0);   /* press down effect */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+a {
+  color: #0066cc;            /* link color */
+  text-decoration: none;     /* remove underline */
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+  color: #004d99;            /* darker blue on hover */
+  border-bottom: 2px solid #004d99; /* subtle underline effect */
+}
+
+a:active {
+  color: #00264d;            /* even darker when clicked */
+}
+
+.About{
+  H2{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;             
+    color: #1e3c72;                
+    margin: 40px 0 20px;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+}
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #444;
+  background: #fff8f0; /* warm off-white instead of pure white */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); /* softer shadow to blend */
+}
+
+table th {
+  background: linear-gradient(135deg, #8b5e34, #a47148, #cbb994); /* warm earthy gradient */
+  color: #ffffff;
+  padding: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+table td {
+  padding: 16px;
+  border-bottom: 1px solid #e5d6c6; /* warm-toned border */
+  transition: all 0.3s ease;
+}
+
+table tr:nth-child(even) {
+  background-color: #fdf3e6; /* soft antique white shade */
+}
+
+table tr:hover td {
+  background-color: #ffe8cc; /* warm peachy hover effect */
+  color: #000;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+.Services{
+    h2{
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;             
+        color: #1e3c72;                
+        margin: 40px 0 20px;
+        letter-spacing: 1px;
+        position: relative;
+        text-transform: uppercase;
+    }
+}

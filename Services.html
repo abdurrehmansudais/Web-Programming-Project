@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafarNama - Services</title>
+  <link rel="stylesheet" href="Style1.css">
 </head>
 <body>
-    <div class="Header" style="display: flex;justify-content: space-between;">
-        <div class="Logo">
-            <img src="Images/SafarNama Logo.png" alt="Logo" width="120" height="120" >
-        </div>
-        <h1><strong>SafarNama</strong></h1>
-        <div class="Navbar" style="justify-content: flex-end;gap: 10px;padding: 40px 20px;">
-            <a href="Home.html">Home</a>
-            <a href="Services.html">Services</a>    
-            <a href="Partners.html">Our Partners</a>
-            <a href="Contact.html">Contact Us</a>
-            <a href="About.html">About Us</a>
-        </div>
+  <header>
+    <div class="logo">
+      <img src="Images/SafarNama Logo.png" alt="SafarNama Logo">
+      <h1>SafarNama</h1>
     </div>
-    <div class="footer"  >
-         <a href="About.html" >About</a> |
-        <a href="Services.html" >Services</a> |
-        <a href="Contact.html" >Contact</a>
-    </div>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="Services.html" class="active">Services</a>
+      <a href="Partners.html">Partners</a>
+      <a href="Contact.html">Contact</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="intro">
+      <h2>Our Services</h2>
+      <p>
+        SafarNama makes your travel simpler and smarter — offering accurate routes,
+        real-time transport info, and integrated metro maps to make navigation effortless.
+      </p>
+    </section>
+
+    <section class="services-grid">
+      <div class="service-card">
+        <h3>Route Selection</h3>
+        <p>
+          Discover the best route between destinations with optimized suggestions
+          to save time and avoid congestion.
+        </p>
+        <button onclick="location='Route.html'">Let's Go</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Metro Bus Routes</h3>
+        <p>
+          Explore complete maps of all Metro Bus lines across Islamabad —
+          Red, Orange, and Blue — along with feeder routes.
+        </p>
+        <button onclick="location='Maps.html'">View Metro Routes</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Local Transport Services</h3>
+        <p>
+          Access up-to-date details of local transport — including vans,
+          buses, and rickshaws — with route and contact information.
+        </p>
+        <button onclick="location='LocalTransport.html'">Get Details</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="About.html">About</a> |
+    <a href="Services.html">Services</a> |
+    <a href="Contact.html">Contact</a>
+  </footer>
 </body>
 </html>
